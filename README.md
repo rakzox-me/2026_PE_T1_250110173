@@ -1,1 +1,1 @@
-# 2026_PE_T1_250110173
+Recopilación de prácticas y ejercicios de Estadística Descriptiva. Aquí se exploran y aplican los conceptos básicos de la materia de Probabilidad y Estadística, demostrando el análisis y tratamiento de datos a través de diversas actividades académicas
