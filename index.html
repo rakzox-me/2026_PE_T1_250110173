@@ -1,1 +1,104 @@
-Creacion del index
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Tablas de Frecuencia — Probabilidad y Estadística</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+
+<header>
+  <div class="label">Probabilidad &amp; Estadística</div>
+  <h1>Tablas de Frecuencia</h1>
+  <p>Tres ejemplos con 100 observaciones cada uno, abarcando datos <em>cuantitativos discretos</em>, <em>cuantitativos continuos</em> y <em>cualitativos</em>.</p>
+</header>
+
+<main>
+
+  <section class="section e1" id="ej1">
+    <div class="sec-header">
+      <div class="badge">1</div>
+      <div class="sec-header-text">
+        <h2>Número de hijos por familia en una comunidad urbana</h2>
+        <span class="type-tag">Cuantitativo Discreto</span>
+      </div>
+    </div>
+
+    <div class="context">
+      <p>
+        En un estudio demográfico realizado en una comunidad urbana de México, se encuestaron
+        <strong>100 familias</strong> seleccionadas de manera aleatoria con el objetivo de analizar la
+        distribución del número de hijos por hogar. Este tipo de variable es <strong>cuantitativa discreta</strong>
+        porque los valores posibles son números enteros no negativos (no se puede tener 2.5 hijos).
+        Conocer esta distribución permite a los planificadores sociales estimar la demanda futura de
+        servicios educativos y de salud en la región.
+      </p>
+    </div>
+
+    <div class="dataset-block">
+      <h3>Conjunto de datos — 100 observaciones (número de hijos por familia)</h3>
+      <div class="data-grid">
+        <span class="data-chip">0</span><span class="data-chip">0</span><span class="data-chip">0</span><span class="data-chip">0</span>
+        <span class="data-chip">0</span><span class="data-chip">0</span><span class="data-chip">0</span><span class="data-chip">0</span>
+        <span class="data-chip">1</span><span class="data-chip">1</span><span class="data-chip">1</span><span class="data-chip">1</span>
+        <span class="data-chip">1</span><span class="data-chip">1</span><span class="data-chip">1</span><span class="data-chip">1</span>
+        <span class="data-chip">1</span><span class="data-chip">1</span><span class="data-chip">1</span><span class="data-chip">1</span>
+        <span class="data-chip">1</span><span class="data-chip">1</span><span class="data-chip">1</span><span class="data-chip">1</span>
+        <span class="data-chip">1</span><span class="data-chip">1</span><span class="data-chip">1</span><span class="data-chip">1</span>
+        <span class="data-chip">1</span><span class="data-chip">1</span>
+        <span class="data-chip">2</span><span class="data-chip">2</span><span class="data-chip">2</span><span class="data-chip">2</span>
+        <span class="data-chip">2</span><span class="data-chip">2</span><span class="data-chip">2</span><span class="data-chip">2</span>
+        <span class="data-chip">2</span><span class="data-chip">2</span><span class="data-chip">2</span><span class="data-chip">2</span>
+        <span class="data-chip">2</span><span class="data-chip">2</span><span class="data-chip">2</span><span class="data-chip">2</span>
+        <span class="data-chip">2</span><span class="data-chip">2</span><span class="data-chip">2</span><span class="data-chip">2</span>
+        <span class="data-chip">2</span><span class="data-chip">2</span><span class="data-chip">2</span><span class="data-chip">2</span>
+        <span class="data-chip">2</span><span class="data-chip">2</span><span class="data-chip">2</span><span class="data-chip">2</span>
+        <span class="data-chip">2</span><span class="data-chip">2</span><span class="data-chip">2</span><span class="data-chip">2</span>
+        <span class="data-chip">2</span><span class="data-chip">2</span><span class="data-chip">2</span>
+        <span class="data-chip">3</span><span class="data-chip">3</span><span class="data-chip">3</span><span class="data-chip">3</span>
+        <span class="data-chip">3</span><span class="data-chip">3</span><span class="data-chip">3</span><span class="data-chip">3</span>
+        <span class="data-chip">3</span><span class="data-chip">3</span><span class="data-chip">3</span><span class="data-chip">3</span>
+        <span class="data-chip">3</span><span class="data-chip">3</span><span class="data-chip">3</span><span class="data-chip">3</span>
+        <span class="data-chip">3</span><span class="data-chip">3</span><span class="data-chip">3</span><span class="data-chip">3</span>
+        <span class="data-chip">4</span><span class="data-chip">4</span><span class="data-chip">4</span><span class="data-chip">4</span>
+        <span class="data-chip">4</span><span class="data-chip">4</span><span class="data-chip">4</span><span class="data-chip">4</span>
+        <span class="data-chip">4</span><span class="data-chip">4</span>
+        <span class="data-chip">5</span><span class="data-chip">5</span><span class="data-chip">5</span><span class="data-chip">5</span>
+        <span class="data-chip">6</span>
+      </div>
+    </div>
+
+    <div class="table-wrap">
+      <h3>Tabla de Frecuencias</h3>
+      <div class="table-scroll">
+        <table>
+          <thead>
+            <tr>
+              <th>Clase (N.º de hijos)</th>
+              <th>Frecuencia Absoluta (f)</th>
+              <th>Frecuencia Relativa (f/n)</th>
+              <th>Frecuencia Acumulada (F)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>0</td><td>8</td><td>0.08</td><td>8</td></tr>
+            <tr><td>1</td><td>22</td><td>0.22</td><td>30</td></tr>
+            <tr><td>2</td><td>35</td><td>0.35</td><td>65</td></tr>
+            <tr><td>3</td><td>20</td><td>0.20</td><td>85</td></tr>
+            <tr><td>4</td><td>10</td><td>0.10</td><td>95</td></tr>
+            <tr><td>5</td><td>4</td><td>0.04</td><td>99</td></tr>
+            <tr><td>6</td><td>1</td><td>0.01</td><td>100</td></tr>
+            <tr class="total-row">
+              <td>Total</td><td>100</td><td>1.00</td><td>—</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+</main>
+</body>
+</html>
